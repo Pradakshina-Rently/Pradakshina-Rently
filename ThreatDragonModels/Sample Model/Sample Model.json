@@ -1,0 +1,18 @@
+{
+  "summary": {
+    "title": "Sample Model",
+    "owner": "Pradakshina-Rently",
+    "description": "A high level diagram of Smart Home application"
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "title": "test",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "diagramType": "STRIDE",
+        "id": 0
+      }
+    ]
+  }
+}
