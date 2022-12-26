@@ -27,16 +27,30 @@
               "angle": 0,
               "id": "869cb09a-d0d1-4be8-a3a1-b7a60ad0d3a0",
               "z": 1,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "handlesGoodsOrServices": true,
+              "threats": [
+                {
+                  "ruleId": "ea1adb4d-097d-45a8-8e48-b728a996f487",
+                  "title": "Expediting",
+                  "type": "Tampering",
+                  "modelType": "STRIDE",
+                  "status": "Open",
+                  "severity": "Low",
+                  "description": "See OWASP Automated Threat #6:\nUsing speed to violate explicit or implicit assumptions about the application’s normal use to achieve unfair individual gain",
+                  "mitigation": "Defences include providing enforcement of behavioral workflow and anti-automation",
+                  "threatId": "683fd175-a161-468b-bf2f-0d9dd6a5196b"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Autho Provider"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -320,10 +334,6 @@
                 {
                   "x": 139,
                   "y": 390
-                },
-                {
-                  "x": 140,
-                  "y": 391
                 }
               ],
               "id": "147cb504-34e9-4027-8972-e452426dd369",
@@ -374,8 +384,8 @@
                   "y": 12
                 },
                 {
-                  "x": 393,
-                  "y": 16
+                  "x": 434,
+                  "y": 167
                 },
                 {
                   "x": 422,
