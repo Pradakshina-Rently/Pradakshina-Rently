@@ -11,7 +11,858 @@
         "title": "test",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "diagramType": "STRIDE",
-        "id": 0
+        "id": 0,
+        "diagramJson": {
+          "cells": [
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 274,
+                "y": 14
+              },
+              "angle": 0,
+              "id": "869cb09a-d0d1-4be8-a3a1-b7a60ad0d3a0",
+              "z": 1,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Autho Provider"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 42,
+                "y": 224
+              },
+              "angle": 0,
+              "id": "78a750d4-fa45-4337-8793-ce4734cb16f6",
+              "z": 2,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "actor 1"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 115,
+                "y": 214
+              },
+              "target": {
+                "x": 274,
+                "y": 82
+              },
+              "vertices": [
+                {
+                  "x": 201,
+                  "y": 155
+                }
+              ],
+              "id": "0e6b9342-8566-466c-9582-70a60b796d0b",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 1,
+                    "offset": 53
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "flow 2",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 3,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 474,
+                "y": 212
+              },
+              "angle": 0,
+              "id": "ab3d15ba-062b-47e3-9763-9b3040ee088f",
+              "z": 4,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "ruleId": "ea1adb4d-097d-45a8-8e48-b728a996f487",
+                  "title": "Expediting",
+                  "type": "Tampering",
+                  "modelType": "STRIDE",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "See OWASP Automated Threat #6:\nUsing speed to violate explicit or implicit assumptions about the application’s normal use to achieve unfair individual gain",
+                  "mitigation": "Defences include providing enforcement of behavioral workflow and anti-automation",
+                  "threatId": "259de117-84d4-4563-a15a-7aaee1d62c9b"
+                },
+                {
+                  "ruleId": "d97bcb80-f96d-44af-869a-d0441761be05",
+                  "title": "Vulnerability scanning",
+                  "type": "Information disclosure",
+                  "modelType": "STRIDE",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "See OWASP Automated Threat #14:\nSystematic enumeration and examination in order to find weaknesses and points where a security vulnerability might exist",
+                  "mitigation": "Defence includes providing anti-automation",
+                  "threatId": "e1cfd62a-ffb2-4ee1-a811-362a11e34a7a"
+                },
+                {
+                  "ruleId": "ce2fe37e-0742-4278-8915-40dc2226150e",
+                  "title": "Denial of Service",
+                  "type": "Elevation of privilege",
+                  "modelType": "STRIDE",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "See OWASP Automated Threat #15:\nUsage may resemble legitimate application usage but leads to exhaustion of resources",
+                  "mitigation": "Mitigation or prevention such as providing backoff, resource management and avoiding forced deadlock",
+                  "threatId": "c4407e84-6811-4760-9e72-39ba0845f3d8"
+                }
+              ],
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Smart Home\napp"
+                },
+                ".element-text": {
+                  "class": "element-text hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 208,
+                "y": 260
+              },
+              "target": {
+                "id": "ab3d15ba-062b-47e3-9763-9b3040ee088f"
+              },
+              "vertices": [
+                {
+                  "x": 306,
+                  "y": 250
+                },
+                {
+                  "x": 378,
+                  "y": 246
+                }
+              ],
+              "id": "6dc2d168-7b52-4aa0-beb4-ff6c98697953",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.48262175272671387,
+                    "offset": -4.500832803559705
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "flow 4",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 5,
+              "hasOpenThreats": true,
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "threats": [
+                {
+                  "ruleId": "ff2fca4d-dedf-46f2-b9ac-aed70055bb4d",
+                  "title": "Vulnerable transport protocol",
+                  "type": "Information disclosure",
+                  "modelType": "STRIDE",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "Older transport protocols are vulnerable and have known vulnerabilities",
+                  "mitigation": "Use up to date cryptography and transport protocols",
+                  "threatId": "9125066f-5014-4fe3-a57b-f992bed01586"
+                },
+                {
+                  "ruleId": "f5f817d5-a067-4415-a40a-b500cb2ab9ad",
+                  "title": "Fingerprinting",
+                  "type": "Information disclosure",
+                  "modelType": "STRIDE",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "See OWASP Automated Threat #4:\nSpecific requests are sent to the application eliciting information in order to profile the application",
+                  "mitigation": "Defence includes restricting what information is provided, for example version numbers and package details",
+                  "threatId": "4397406d-12e3-4fae-803a-cbe27bd7cc07"
+                }
+              ],
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 141,
+                "y": 430
+              },
+              "angle": 0,
+              "id": "25adcaab-3faf-4de4-b5eb-3878382e87a3",
+              "z": 6,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "ruleId": "ea1adb4d-097d-45a8-8e48-b728a996f487",
+                  "title": "Expediting",
+                  "type": "Tampering",
+                  "modelType": "STRIDE",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "See OWASP Automated Threat #6:\nUsing speed to violate explicit or implicit assumptions about the application’s normal use to achieve unfair individual gain",
+                  "mitigation": "Defences include providing enforcement of behavioral workflow and anti-automation",
+                  "threatId": "a67b1721-8143-482a-95b3-f19ebeff7cc4"
+                },
+                {
+                  "ruleId": "d97bcb80-f96d-44af-869a-d0441761be05",
+                  "title": "Vulnerability scanning",
+                  "type": "Information disclosure",
+                  "modelType": "STRIDE",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "See OWASP Automated Threat #14:\nSystematic enumeration and examination in order to find weaknesses and points where a security vulnerability might exist",
+                  "mitigation": "Defence includes providing anti-automation",
+                  "threatId": "1297a978-1d08-4bf8-972d-782ddc8d8662"
+                }
+              ],
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Mobile Device"
+                },
+                ".element-text": {
+                  "class": "element-text hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "78a750d4-fa45-4337-8793-ce4734cb16f6"
+              },
+              "target": {
+                "x": 161,
+                "y": 433
+              },
+              "vertices": [
+                {
+                  "x": 139,
+                  "y": 390
+                },
+                {
+                  "x": 140,
+                  "y": 391
+                }
+              ],
+              "id": "147cb504-34e9-4027-8972-e452426dd369",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.46607792415806326,
+                    "offset": 1.337763535962185
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "flow 6",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 7,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 444,
+                "y": 15
+              },
+              "target": {
+                "x": 361,
+                "y": 504
+              },
+              "vertices": [
+                {
+                  "x": 449,
+                  "y": 12
+                },
+                {
+                  "x": 393,
+                  "y": 16
+                },
+                {
+                  "x": 422,
+                  "y": 305
+                }
+              ],
+              "id": "acc6d4a7-d1be-48aa-956d-18e5e1c82aaa",
+              "z": 8,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 577,
+                "y": 255
+              },
+              "target": {
+                "x": 817,
+                "y": 258
+              },
+              "vertices": [],
+              "id": "10c88672-f47e-4a2d-9b54-bd6b7db30a8f",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 1,
+                    "offset": -39
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "flow 8",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 9,
+              "hasOpenThreats": false,
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 821,
+                "y": 204
+              },
+              "angle": 0,
+              "id": "d636f761-0719-4876-9a8a-33389c9d4efe",
+              "z": 10,
+              "hasOpenThreats": true,
+              "isWebApplication": true,
+              "handlesGoodsOrServices": true,
+              "threats": [
+                {
+                  "ruleId": "ea1adb4d-097d-45a8-8e48-b728a996f487",
+                  "title": "Expediting",
+                  "type": "Tampering",
+                  "modelType": "STRIDE",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "See OWASP Automated Threat #6:\nUsing speed to violate explicit or implicit assumptions about the application’s normal use to achieve unfair individual gain",
+                  "mitigation": "Defences include providing enforcement of behavioral workflow and anti-automation",
+                  "threatId": "5efeae32-bd1e-4305-9bea-47c0221ba9bb"
+                },
+                {
+                  "ruleId": "20527bee-aae7-4593-acac-7a07169ccc4f",
+                  "title": "Footprinting",
+                  "type": "Information disclosure",
+                  "modelType": "STRIDE",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "See OWASP Automated Threat #18:\nInformation gathering with the objective of learning as much as possible about the composition, configuration and security mechanisms of the application",
+                  "mitigation": "Defences include shutting down unnecessary services/ports and excluding information that could identify and compromise security of the organisation",
+                  "threatId": "91d31afa-ef14-49b4-8e62-9205e368c1f1"
+                }
+              ],
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Rails Server"
+                },
+                ".element-text": {
+                  "class": "element-text hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 907,
+                "y": 211
+              },
+              "target": {
+                "id": "68d6484f-56dc-4eb9-968d-3eb6c9781bbe"
+              },
+              "vertices": [],
+              "id": "a7800d20-ec69-481a-b014-d7abe04270ab",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "flow 12",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 13,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 1163,
+                "y": 36
+              },
+              "angle": 0,
+              "id": "68d6484f-56dc-4eb9-968d-3eb6c9781bbe",
+              "z": 14,
+              "hasOpenThreats": true,
+              "storesCredentials": true,
+              "isALog": true,
+              "storesInventory": true,
+              "isEncrypted": true,
+              "isSigned": true,
+              "threats": [
+                {
+                  "ruleId": "80f32309-4f8a-4676-993b-7a37cbf62df1",
+                  "title": "Scraping",
+                  "type": "Elevation of privilege",
+                  "modelType": "STRIDE",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "See OWASP Automated Threat #11:\nCollecting accessible data and/or processed output from the application",
+                  "mitigation": "Detect fake or compromised accounts, ensure information is accessible only with authentication and authorisation",
+                  "threatId": "0ef89d49-f82d-4361-8b5a-c6564476994b"
+                },
+                {
+                  "ruleId": "fe90a897-3ff2-47a5-94db-2a4d6f17bb57",
+                  "title": "Spamming",
+                  "type": "Elevation of privilege",
+                  "modelType": "STRIDE",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "See OWASP Automated Threat #17:\nStoring malicious such as malware, Iframe distribution, photographs & videos, advertisements, referrer spam and tracking/surveillance code",
+                  "mitigation": "Defences include detecting embedded malicious code, controling interaction frequency and enforcement of a single unique action",
+                  "threatId": "16d6487a-a781-4185-9781-8ae7adfda629"
+                },
+                {
+                  "ruleId": "dc09cecf-cb06-455d-9e77-b9372bf6c8eb",
+                  "title": "Credential cracking",
+                  "type": "Information disclosure",
+                  "modelType": "STRIDE",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "See OWASP Automated Threat #7:\nBrute force, dictionary and guessing attacks used against authentication processes of the application to identify valid account credentials",
+                  "mitigation": "Defences include restriction of excessive authentication attempts, control of interaction frequency and enforcement of a single unique action",
+                  "threatId": "8fd7666e-3c60-430a-8d11-0a9c56b08990"
+                },
+                {
+                  "ruleId": "d960d589-80da-41dc-a7c2-33136bdda7e0",
+                  "title": "Account creation",
+                  "type": "Elevation of privilege",
+                  "modelType": "STRIDE",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "See OWASP Automated Threat #19:\nBulk account creation, and sometimes profile population, by using the application’s account signup processes",
+                  "mitigation": "Defences include control of interaction frequency, enforcement of a single unique a action and enforcement of behavioral workflow",
+                  "threatId": "0b6d6759-dd74-4170-b409-b6055eecaba6"
+                },
+                {
+                  "ruleId": "034095d9-9012-4cb5-a7a8-1e19ab72bba3",
+                  "title": "Vulnerable cryptography",
+                  "type": "Information disclosure",
+                  "modelType": "STRIDE",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "Out of date cryptographic techniques are vulnerable and have known vulnerabilities",
+                  "mitigation": "Use up to date cryptographic methods for checksums, signatures and certificates",
+                  "threatId": "517ec70e-db89-4a28-8eb1-25375ba53146"
+                }
+              ],
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Sql DB"
+                },
+                ".element-text": {
+                  "class": "element-text hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 1204,
+                "y": 248
+              },
+              "angle": 0,
+              "id": "0baea700-5bc7-40b2-a04d-d814d1d715f1",
+              "z": 15,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "ruleId": "5b0d4c4e-8245-4bea-a2ad-cf0be0a441f5",
+                  "title": "CAPTCHA defeat",
+                  "type": "Elevation of privilege",
+                  "modelType": "STRIDE",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "See OWASP Automated Threat #9:\nAutomation is used in an attempt to analyse and determination the answers to CAPTCHA tests and related puzzles",
+                  "mitigation": "Defences include guarding against automation, unguessable CAPTCHA and proper enforcement of behavioral workflow",
+                  "threatId": "dbb7d290-cb84-47be-b569-85e308f5b44d"
+                }
+              ],
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Aws Sever"
+                },
+                ".element-text": {
+                  "class": "element-text hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 923,
+                "y": 250
+              },
+              "target": {
+                "x": 1199,
+                "y": 287
+              },
+              "vertices": [
+                {
+                  "x": 1058,
+                  "y": 285
+                }
+              ],
+              "id": "e88afcba-73e8-43c8-b213-58088e7e7486",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "flow 15",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 16,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 828,
+                "y": 4
+              },
+              "target": {
+                "x": 796,
+                "y": 547
+              },
+              "vertices": [
+                {
+                  "x": 710,
+                  "y": 152
+                },
+                {
+                  "x": 669,
+                  "y": 377
+                },
+                {
+                  "x": 770,
+                  "y": 513
+                }
+              ],
+              "id": "ffd25ba4-1273-4a9f-b112-38baf6bb67b1",
+              "z": 17,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 463,
+                "y": 356
+              },
+              "angle": 0,
+              "id": "4d0ea193-0377-4327-9fe3-95e4328fa76b",
+              "z": 18,
+              "hasOpenThreats": true,
+              "isWebApplication": true,
+              "threats": [
+                {
+                  "ruleId": "b2a6d40d-d3f8-4750-8e4d-c02cc84b13dc",
+                  "title": "Generic spoofing threat",
+                  "type": "Spoofing",
+                  "modelType": "STRIDE",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "A generic spoofing threat",
+                  "mitigation": "Mitigation or prevention for the threat",
+                  "threatId": "1abd9f88-5695-4240-8e7c-137ee3d47874"
+                }
+              ],
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Tuya Repo"
+                },
+                ".element-text": {
+                  "class": "element-text hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 569,
+                "y": 292
+              },
+              "target": {
+                "x": 818,
+                "y": 437
+              },
+              "vertices": [
+                {
+                  "x": 787,
+                  "y": 431
+                },
+                {
+                  "x": 823,
+                  "y": 450
+                }
+              ],
+              "id": "529fdae4-84c0-44ff-9a55-94392b0d8372",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "flow 16",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 19,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 820,
+                "y": 399
+              },
+              "angle": 0,
+              "id": "c1c9b911-7f9b-4de0-8f9e-c920944000b0",
+              "z": 20,
+              "hasOpenThreats": true,
+              "isWebApplication": true,
+              "handlesGoodsOrServices": true,
+              "threats": [
+                {
+                  "ruleId": "d97bcb80-f96d-44af-869a-d0441761be05",
+                  "title": "Vulnerability scanning",
+                  "type": "Information disclosure",
+                  "modelType": "STRIDE",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "See OWASP Automated Threat #14:\nSystematic enumeration and examination in order to find weaknesses and points where a security vulnerability might exist",
+                  "mitigation": "Defence includes providing anti-automation",
+                  "threatId": "264bdab4-902a-4100-a0d3-89d353416bf2"
+                }
+              ],
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Firebase"
+                },
+                ".element-text": {
+                  "class": "element-text hasOpenThreats isInScope"
+                }
+              }
+            }
+          ]
+        },
+        "size": {
+          "height": 590,
+          "width": 5466
+        }
       }
     ]
   }
